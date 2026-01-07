@@ -3,7 +3,7 @@ class Solution{
         int total=0;
         for(int i=0;i<s.length();i++){
             int current=value(s.charAt(i));
-            int next=(i+1< s.length())?value(s.charAt(i+1)):0;
+            int next=(i+1<s.length())?value(s.charAt(i+1)):0;
             if(current<next){
                 total-=current;  // subtraction case
             }else{
